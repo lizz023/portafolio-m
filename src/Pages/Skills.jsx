@@ -10,15 +10,18 @@ import imgFigma from '../../src/assets/Img/figma.png'
 import imgPython from '../../src/assets/Img/python-5.svg'
 import imgGit from '../../src/assets/Img/git.svg'
 import imgGithub from '../../src/assets/Img/github.png'
+import imgMysql from '../../src/assets/Img/mysql.png'
 
 const SkillSection = styled.section`
     align-items: center;
     background-color: white;
     display: flex;
     max-width: 1136px;
-    height: 71vh;
+ 
 
-    
+    @media screen {
+        /* height: 71vh; */
+    }
 `
 const SkillContainer = styled.div`
     align-items: center;
@@ -27,6 +30,7 @@ const SkillContainer = styled.div`
     flex-wrap: nowrap;
     gap: 50px;
     max-width: 1136px;
+    padding: 40px 0 ;
     
 `
 const SkillTittle = styled.h1`
@@ -37,11 +41,16 @@ const SkillTittle = styled.h1`
 const Description = styled.p`
     color: black;
     font-size: 24px;
+    text-align: center;
+    
+    @media screen {
+      
+    }
 `
 const SkillLinks = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 19px;
+    gap: 50px;
     padding: 10px 40px;
     transition: 0.3s;
     :hover{
@@ -104,6 +113,10 @@ const Skills = () => {
                             <SkillImg src={imgGithub}></SkillImg>
                         </Link>
                         
+                        <Link 
+                            to={"https://app.aluracursos.com/certificate/c7b4096a-dee6-451f-ac35-326a4eb4d08f"} target='blank'>
+                            <SkillImg src={imgMysql}></SkillImg>
+                        </Link>
 
                         <Link to={"/aboutMe"}><SkillImg src={imgFigma}></SkillImg></Link>
                         

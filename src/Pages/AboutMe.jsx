@@ -25,10 +25,9 @@ const Paragraph = styled.p`
     padding: 20px 40px;
     text-align: justify;
     color: #000;
+    font-size: 28px;
 
-    @media screen {
-        font-size: 14px;
-    }
+    
 `
 const Gif = styled.img`
     padding: 20px 40px;
