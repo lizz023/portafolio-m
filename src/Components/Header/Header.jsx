@@ -40,12 +40,14 @@ const LogoDev = styled.img`
 const NavLinks = styled.div`
     color: #fff;
     display: flex;
-    font-family: 'Gagalin';
     gap: 10px;
     margin: 0;
+    font-size: 17px;
 
     @media (min-width: 1136px){
+        font-size: 24px;
         gap: 20px;
+
     }
 
 `
