@@ -114,11 +114,11 @@ const Skills = () => {
                         </Link>
                         
                         <Link 
-                            to={"https://app.aluracursos.com/certificate/c7b4096a-dee6-451f-ac35-326a4eb4d08f"} target='blank'>
+                            to={"/"} target='blank'>
                             <SkillImg src={imgMysql}></SkillImg>
                         </Link>
 
-                        <Link to={"/aboutMe"}><SkillImg src={imgFigma}></SkillImg></Link>
+                        <Link to={"/"}><SkillImg src={imgFigma}></SkillImg></Link>
                         
                     </SkillLinks>
 
