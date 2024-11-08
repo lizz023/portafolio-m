@@ -27,7 +27,7 @@ const Paragraph = styled.p`
     color: #000;
 
     @media screen {
-        font-size: 12px;
+        font-size: 14px;
     }
 `
 const Gif = styled.img`
