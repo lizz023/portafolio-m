@@ -25,6 +25,7 @@ const Paragraph = styled.p`
     padding: 20px 40px;
     text-align: justify;
     color: #000;
+    font-size: 16px;
     
     @media (min-width: 1136px) {
         font-size: 28px;
