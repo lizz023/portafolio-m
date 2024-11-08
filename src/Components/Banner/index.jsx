@@ -16,6 +16,10 @@ const BannerBox = styled.div`
     justify-content: space-between;
     height: 100vh;
     padding: 20px 40px;
+
+    @media( max-width: 768px){
+        flex-direction:column
+    }
 `
 const BannerTitle = styled.div`
     color: #fff;
