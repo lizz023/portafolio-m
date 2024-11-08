@@ -42,13 +42,12 @@ const AboutMe = () => {
 
             <SectionContainer>
                 <Paragraph>
-                    Industrial Production Technologist passionate about the world of technology and web development. 
-                    I love developing and implementing the visual components of a web page, creating a good user 
-                    experience and thus achieving a balance between functional and aesthetic design. Every day I 
-                    learn to solve logical programming problems efficiently using good practices and frameworks. 
-                    I quickly learn new technologies, I have communication skills, creativity, 
-                    teamwork and detail orientation.  I am currently part of the One program (Oracle Next Education)
-                    and I am a Front-end Web Development student at Alura Latam.
+                    
+                    Front-End Developer Junior, I love developing and implementing the visual components of a web page, creating a good experience for the user and thus achieving a balance between functional and aesthetic design, my knowledge is: HTML, CSS, JAVASCRIPT, REACT, NODE .JS, SQL, MYSQL, MONGO DB, PYTHON. My soft skills are: teamwork, assertive communication, creativity, problem solving. 
+                    
+                    I am looking for an opportunity to acquire my first experience in web development and be able to demonstrate my full potential.
+                    
+                    I am currently doing an internship as a full stack developer at Grupo ConsulTIC
                 </Paragraph>
 
                 <Gif src={Transition} alt="Gif"></Gif>
