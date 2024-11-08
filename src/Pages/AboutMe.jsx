@@ -12,6 +12,10 @@ const SectionContainer = styled.div`
     display: flex;
     height: 70vh;
     max-width: 1136px;
+
+    @media screen {
+        flex-direction: column;
+    }
 `
 
 const Paragraph = styled.p`
@@ -21,6 +25,10 @@ const Paragraph = styled.p`
     padding: 20px 40px;
     text-align: justify;
     color: #000;
+
+    @media screen {
+        font-size: 12px;
+    }
 `
 const Gif = styled.img`
     padding: 20px 40px;
