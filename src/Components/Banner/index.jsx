@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Photo from "../../assets/Img/Lizz.png"
+import Photo from "../../assets/Img/lizz.png"
 import Linkedin from "../../assets/Img/linkedin.png"
 import Github from "../../assets/Img/github.png"
 import Bubble from "../Bubble";
