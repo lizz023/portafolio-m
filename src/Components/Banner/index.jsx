@@ -14,11 +14,14 @@ const BannerBox = styled.div`
     display: flex;
     max-width: 1136px;
     justify-content: space-between;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 20px 40px;
 
     @media( max-width: 768px){
         flex-direction:column
+    }
+    @media( min-width: 1136px){
+       height: 100vh;
     }
 `
 const BannerTitle = styled.div`
