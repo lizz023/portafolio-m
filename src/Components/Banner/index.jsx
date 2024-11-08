@@ -100,7 +100,7 @@ const Banner = () => {
                         </Icons>
 
                         <Icons href={"https://github.com/lizz023"}target={"_blank"}>
-                            <IconsBanner src={Github}></IconsBanner> Linkedin
+                            <IconsBanner src={Github}></IconsBanner> GitHub
                         </Icons>
 
                 </IconsContainer>
