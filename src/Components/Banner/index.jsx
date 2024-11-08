@@ -26,8 +26,13 @@ const BannerTitle = styled.div`
     margin: 0;
 `
 const BannerTitleH2 = styled.h2`
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 800;
+    text-align: center;
+
+    @media (min-width: 1136px){
+        font-size: 60px;
+    }
 `
 
 const BannerP = styled.p`
