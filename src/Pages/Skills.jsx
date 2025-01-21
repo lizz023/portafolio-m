@@ -48,19 +48,26 @@ const Description = styled.p`
     }
 `
 const SkillLinks = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding: 10px 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     transition: 0.3s;
+    gap: 50px;
+    padding: 20px 40px;
+    /* grid-auto-rows: minmax(100px, auto); */
     :hover{
-        transform: scale(1.1);
+        transform: scale(1.1) ;
+    }
+   
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
     }
 `
 
 const SkillImg = styled.img`
     display: flex;
-    width: 100px;
+    padding: 15px;
+    width: 100%;
 `
 const Skills = () => {
     return (

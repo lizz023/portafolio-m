@@ -12,9 +12,9 @@ const SectionContainer = styled.div`
     display: flex;
     height: 70vh;
     max-width: 1136px;
-
-    @media screen {
-        flex-direction: column;
+    
+    @media (max-width:768px) {
+        flex-wrap: wrap;
     }
 `
 
@@ -28,7 +28,7 @@ const Paragraph = styled.p`
     font-size: 16px;
     
     @media (min-width: 1136px) {
-        font-size: 28px;
+        font-size: 24px;
     }
 `
 const Gif = styled.img`
