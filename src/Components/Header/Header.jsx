@@ -68,7 +68,7 @@ const Header = () => {
                 <NavLinks>
                     <Link to={"/aboutMe"}>About Me</Link>
                     <Link to={"/skills"}>Skills</Link>
-                    <Link to={"/"}>Projects</Link>
+                    <Link to={"/projects"}>Projects</Link>
                     <Link to={"/"}>Contact</Link>
                 </NavLinks>
 

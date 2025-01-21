@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import Transition from "../../src/assets/Img/transition.gif";
 import Bubble from "../Components/Bubble";
 
+
 const AboutMeContainer = styled.section`
     background-color: cadetblue;
 
