@@ -9,11 +9,13 @@ const AboutMeContainer = styled.section`
 `
 const SectionContainer = styled.div`
     align-items: center;
+    align-content: center;
     display: flex;
     height: 70vh;
     max-width: 1136px;
     
     @media (max-width:768px) {
+        /* flex-direction: column; */
         flex-wrap: wrap;
     }
 `
