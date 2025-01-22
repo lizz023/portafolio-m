@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
-import ImgTriqui from "../../src/assets/Img/triqui.png"
+import ImgTriqui from "../../src/assets/Img/encriptador.png"
 
 const ProjectsContainer = styled.div`
     background: #202020;
@@ -11,14 +11,16 @@ const ProjectsContainer = styled.div`
     margin: 0 auto;
 `
 const ImgProjects = styled.img`
-    width: 100px;
+    width: 100%;
+    
 `
 
 const Projects = () => {
 
     const images = [
         {
-            original: <ImgProjects src={ImgTriqui}></ImgProjects>
+            original: <ImgProjects src={ImgTriqui}></ImgProjects>,
+            thumbnail: <ImgProjects src={ImgTriqui}></ImgProjects>
             
         },
         {
@@ -41,7 +43,7 @@ const Projects = () => {
                 showThumbnails={true}
                 showNav={false}
                 thumbnailPosition="bottom"
-                autoPlay={true}
+                autoPlay={false}
                 
             />
         </ProjectsContainer>
