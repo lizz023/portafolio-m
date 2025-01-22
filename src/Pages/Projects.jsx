@@ -4,10 +4,11 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import ImgTriqui from "../../src/assets/Img/encriptador.png"
 
 const ProjectsContainer = styled.div`
+    align-items: center;
     background: #202020;
     color: white;
-    width: 50%;
-    height: 70vh;
+    display: flex;
+    height: 50vh;
     margin: 0 auto;
 `
 // const ImgProjects = styled.img`
@@ -40,7 +41,7 @@ const Projects = () => {
                 showThumbnails={true}
                 showNav={false}
                 thumbnailPosition="bottom"
-                autoPlay={false}
+                autoPlay={true}
             />
         </ProjectsContainer>
     )
