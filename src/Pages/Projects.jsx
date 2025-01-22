@@ -10,26 +10,23 @@ const ProjectsContainer = styled.div`
     height: 70vh;
     margin: 0 auto;
 `
-const ImgProjects = styled.img`
-    width: 100%;
-    
-`
+// const ImgProjects = styled.img`
+//     width: 100%;
+//     padding: 15px;
+// `
 
 const Projects = () => {
 
     const images = [
         {
-            original: <ImgProjects src={ImgTriqui}></ImgProjects>,
-            thumbnail: <ImgProjects src={ImgTriqui}></ImgProjects>
+            original: ImgTriqui, thumbnail:ImgTriqui
             
         },
         {
-            original: "https://picsum.photos/id/1015/1000/600",
-            thumbnail: "https://picsum.photos/id/1015/250/150" 
+            original: ImgTriqui, thumbnail:ImgTriqui
         },
         {
-            original: "https://picsum.photos/id/1019/1000/600",
-            thumbnail: "https://picsum.photos/id/1019/250/150" 
+            original: ImgTriqui, thumbnail:ImgTriqui
         },
     ];
 
@@ -44,7 +41,6 @@ const Projects = () => {
                 showNav={false}
                 thumbnailPosition="bottom"
                 autoPlay={false}
-                
             />
         </ProjectsContainer>
     )
