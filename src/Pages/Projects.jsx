@@ -29,13 +29,8 @@ const StyledImage = styled.img`
   object-fit: cover; /* Ajusta la imagen sin deformarla */
   border-radius: 10px;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-
-  /* &:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    background-color: red;
-  } */
 `
-const Backdrop = styled.div`
+const BackdropWithText = styled.div`
     position: absolute;
     top: 0;
     left:0;
@@ -44,8 +39,23 @@ const Backdrop = styled.div`
     background-color: rgba(0,0,0,0);
     transition: 0.3s;
 
+    &:before{
+        content: "${props => props.text}";
+        position: absolute;
+        z-index: 1;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+   
     &:hover{
         background-color: rgba(0, 0, 0, 0.5);
+        &:before{
+            opacity:1;
+        }
     }
 `
 
@@ -69,9 +79,9 @@ const Projects = () => {
     ];
 
     const renderItem = (item) => (
-        <Link to={item.link} style={{ display: "block", position: "relative" }} target="blank">
-            <Backdrop />
-            <StyledImage  src={item.original} alt="Project"/>
+        <Link to={item.link} style={{ display: "block", position: "relative" }} target="blank" >
+            <BackdropWithText text="Click aquí"/>
+            <StyledImage  src={item.original} alt="Project" placeholder="Click aquí"/>
         </Link>
     );
 
