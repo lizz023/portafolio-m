@@ -11,7 +11,8 @@ const ProjectsContainer = styled.div`
     color: white;
     display: flex;
     flex-direction: column;
-    height: auto;
+    justify-content: center;
+    height: 100vh;
     gap:30px;
     padding: 40px;
 `
