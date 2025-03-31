@@ -8,37 +8,38 @@ import { Link } from "react-router-dom";
 
 const ProjectsContainer = styled.div`
     align-items: center;
-    
     color: white;
     display: flex;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 20px;
+    flex-direction: column;
+    height: auto;
+    gap:30px;
+    padding: 40px;
 `
 const DescriptionProject = styled.p`
     color: black;
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
+    flex-direction: row;
     text-align: justify;
-    width: 30%;
+    /* width: 30%; */
 `
 
 const StyledImage = styled.img`
-  width: 400px; /* Ajusta según tus necesidades */
-  height: 300px;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
   border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  width: 550px; 
 `
 const BackdropWithText = styled.div`
-    position: absolute;
-    top: 0;
-    left:0;
-    width:100%;
-    height:100%;
     background-color: rgba(0,0,0,0);
+    height:100%;
+    left:0;
+    position: absolute;
     transition: 0.3s;
-
+    top: 0;
+    width:100%;
+    
     &:before{
         content: "${props => props.text}";
         position: absolute;
