@@ -12,7 +12,7 @@ const SectionContainer = styled.div`
     align-items: center;
     align-content: center;
     display: flex;
-    height: 70vh;
+    min-height: 100dvh;
     max-width: 1136px;
     
     @media (max-width:768px) {
