@@ -14,7 +14,7 @@ const ProjectsContainer = styled.div`
     justify-content: center;
     min-height: 100vh;
     gap:30px;
-    padding: 40px;
+    padding: 0 40px;
 `
 const DescriptionProject = styled.p`
     color: black;
