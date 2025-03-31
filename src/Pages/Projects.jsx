@@ -21,7 +21,6 @@ const DescriptionProject = styled.p`
     font-size: 20px;
     flex-direction: row;
     text-align: justify;
-    /* width: 30%; */
 `
 
 const StyledImage = styled.img`
@@ -30,6 +29,11 @@ const StyledImage = styled.img`
   object-fit: cover;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
   width: 550px; 
+  
+  @media(max-width: 768px){
+    width: 300px;
+    height: 150px
+  }
 `
 const BackdropWithText = styled.div`
     background-color: rgba(0,0,0,0);
