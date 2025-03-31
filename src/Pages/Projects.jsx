@@ -31,7 +31,7 @@ const StyledImage = styled.img`
   width: 550px; 
   
   @media(max-width: 768px){
-    width: 300px;
+    width: 200px;
     height: 150px
   }
 `

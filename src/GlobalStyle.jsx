@@ -37,8 +37,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     @media(max-width: 786px){
-        width:60px;
-        height: 60px
+        width:50px;
+        height: 50px;
     }
 
 `
