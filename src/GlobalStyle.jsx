@@ -29,12 +29,17 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     }
 
-    /* .image-gallery-thumbnail img {
-    width: 80px !important;  /* Ajusta el tamaño de la miniatura */
-    /* height: 80px !important;
+    .image-gallery-thumbnail img {
+    width: 70px !important;  /* Ajusta el tamaño de la miniatura */
+    height: 70px !important;
     object-fit: cover !important;
     border-radius: 5px;
-    } */ */
+    }
+
+    @media(max-width: 786px){
+        width:60px;
+        height: 60px
+    }
 
 `
 
