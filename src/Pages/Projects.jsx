@@ -25,7 +25,8 @@ const StyledImage = styled.img`
   
   @media(max-width: 768px){
     width: 350px;
-    height: 300px
+    height: 300px;
+    padding: 20px
   }
 `
 const BackdropWithText = styled.div`

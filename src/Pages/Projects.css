@@ -7,5 +7,11 @@
     min-height: 100vh;
     gap:30px;
     padding: 0 40px;
-}
 
+    
+}
+@media(max-width:768px){
+    .projects-container{
+        padding: 0 20px;
+    }
+}
