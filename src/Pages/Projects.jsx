@@ -5,17 +5,9 @@ import ImgEncriptador from "../../src/assets/Img/ecript1.png"
 import ImgTicTacToe from "../../src/assets/Img/tictac.png"
 import ImgComming from "../../src/assets/Img/comming.jpg"
 import { Link } from "react-router-dom";
+import './Projects.css';
+import { useState, useEffect } from "react";
 
-const ProjectsContainer = styled.div`
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    gap:30px;
-    padding: 0 40px;
-`
 const DescriptionProject = styled.p`
     color: black;
     display: flex;
@@ -32,8 +24,8 @@ const StyledImage = styled.img`
   width: 550px; 
   
   @media(max-width: 768px){
-    width: 200px;
-    height: 150px
+    width: 400px;
+    height: 300px
   }
 `
 const BackdropWithText = styled.div`
@@ -67,6 +59,23 @@ const BackdropWithText = styled.div`
 
 const Projects = () => {
 
+    const [thumbnailPosition, setThumbnailPosition] = useState("left");
+
+    useEffect(() => {
+        const updateThumbnailPosition = () => {
+            if (window.innerWidth <= 768) {
+                setThumbnailPosition("bottom");
+            } else {
+                setThumbnailPosition("left");
+            }
+        };
+
+        updateThumbnailPosition(); // Ajusta la posición al cargar la página
+        window.addEventListener("resize", updateThumbnailPosition);
+
+        return () => window.removeEventListener("resize", updateThumbnailPosition);
+    }, []);
+
     const images = [
         {
             original: ImgEncriptador, 
@@ -92,7 +101,8 @@ const Projects = () => {
     );
 
     return(
-        <ProjectsContainer>
+        <div className="projects-container">
+        {/*<ProjectsContainer>*/}
             <DescriptionProject>
                 Estos son mis proyectos más destacados, hacer click en la imagen para visualizarlo.
             </DescriptionProject>
@@ -105,11 +115,11 @@ const Projects = () => {
                 showPlayButton={false}
                 showThumbnails={true}
                 showNav={false}
-                thumbnailPosition="bottom"
                 autoPlay={true}
-                thumbnailPosition={"left"}
+                thumbnailPosition={thumbnailPosition}
             />
-        </ProjectsContainer>
+        {/* </ProjectsContainer> */}
+        </div>
     )
 }
 

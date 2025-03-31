@@ -1,0 +1,11 @@
+.projects-container {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    gap:30px;
+    padding: 0 40px;
+}
+
