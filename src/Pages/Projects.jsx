@@ -24,7 +24,7 @@ const StyledImage = styled.img`
   width: 550px; 
   
   @media(max-width: 768px){
-    width: 400px;
+    width: 350px;
     height: 300px
   }
 `
