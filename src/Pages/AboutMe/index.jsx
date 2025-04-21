@@ -1,7 +1,7 @@
 
 import { styled } from "styled-components";
-import Transition from "../../src/assets/Img/transition.gif";
-import Bubble from "../Components/Bubble";
+import Transition from "../../assets/Img/transition.gif";
+import Bubble from "../../Components/Bubble";
 
 
 const AboutMeContainer = styled.section`
@@ -46,11 +46,11 @@ const AboutMe = () => {
             <SectionContainer>
                 <Paragraph>
                     
-                    Front-End Developer Junior, I love developing and implementing the visual components of a web page, creating a good experience for the user and thus achieving a balance between functional and aesthetic design, my knowledge is: HTML, CSS, JAVASCRIPT, REACT, NODE .JS, SQL, MYSQL, MONGO DB, PYTHON. My soft skills are: teamwork, assertive communication, creativity, problem solving. 
-                    
-                    I am looking for an opportunity to acquire my first experience in web development and be able to demonstrate my full potential.
-                    
-                    I am currently doing an internship as a full stack developer at Grupo ConsulTIC
+                Soy tecnóloga en Producción Industrial, y en 2022 decidí iniciar una nueva etapa profesional en el desarrollo de software. Fue un cambio impulsado por curiosidad, motivación personal y el deseo de construir un futuro diferente para mí y mi familia.
+
+                Desde entonces he aprendido de forma autodidacta tecnologías como HTML, CSS, JavaScript, React, Node.js y SQL, y actualmente estoy cursando una carrera en desarrollo de software para reforzar mis bases técnicas. Me gusta crear soluciones web funcionales, cuidar los detalles, y seguir aprendiendo todos los días.
+
+                Busco crecer como desarrolladora, formar parte de equipos donde se valore el aprendizaje constante y aportar con compromiso, dedicación y muchas ganas.
                 </Paragraph>
 
                 <Gif src={Transition} alt="Gif"></Gif>

@@ -1,16 +1,16 @@
 
 import { Link } from 'react-router-dom'
 import {styled} from 'styled-components'
-import imgCss from '../../src/assets/Img/css.png'
-import imgHtml from '../../src/assets/Img/html.png'
-import imgJs from '../../src/assets/Img/js.png'
-import imgReact from '../../src/assets/Img/react.png'
-import imgNode from '../../src/assets/Img/node.png'
-import imgFigma from '../../src/assets/Img/figma.png'
-import imgPython from '../../src/assets/Img/python-5.svg'
-import imgGit from '../../src/assets/Img/git.svg'
-import imgGithub from '../../src/assets/Img/github.png'
-import imgMysql from '../../src/assets/Img/mysql.png'
+import imgCss from '../../assets/Img/css.png'
+import imgHtml from '../../assets/Img/html.png'
+import imgJs from '../../assets/Img/js.png'
+import imgReact from '../../assets/Img/react.png'
+import imgNode from '../../assets/Img/node.png'
+import imgFigma from '../../assets/Img/figma.png'
+import imgPython from '../../assets/Img/python-5.svg'
+import imgGit from '../../assets/Img/git.svg'
+import imgGithub from '../../assets/Img/github.png'
+import imgMysql from '../../assets/Img/mysql.png'
 
 const SkillSection = styled.section`
     align-items: center;
